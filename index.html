@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Kanit:wght@500&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="index">
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="Pages/olympics.html">Olympics</a></li>
+    <li><a href="Pages/icc.html">Cricket World Cup</a></li>
+    <li><a href="Pages/fifa.html">FIFA World Cup</a></li>
+    <li><a href="Pages/rugby.html">Rugby World Cup</a></li>
+</ul>
+<br>
+<h1 align="center">Sporting Event Worldwide</h1>
+<hr>
+<br>
+<h2>Introduction</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque deleniti mollitia maiores, nostrum aliquid! Error numquam voluptatem omnis reiciendis alias, assumenda maiores odit eius commodi voluptates iure quam minus.
+Quaerat facere molestias assumenda aperiam quidem eveniet. Voluptatum, fuga odit repellat placeat enim obcaecati animi. Commodi voluptatem obcaecati eius odit corporis, voluptatibus, dolor totam ipsa architecto labore laudantium? Numquam, recusandae.
+Consectetur incidunt sapiente debitis, voluptate sunt placeat, molestiae distinctio porro illo quos aspernatur quae tenetur blanditiis aliquid ex id ullam architecto quasi accusantium veniam labore impedit nulla nihil culpa? Sunt?
+Asperiores dicta minus voluptatem temporibus id ducimus explicabo ipsum consequuntur incidunt accusamus eveniet distinctio, provident reprehenderit facere, corrupti ratione qui tenetur fugiat nobis. Ipsum maxime, adipisci enim atque odio impedit.
+Ipsam rem expedita asperiores consequatur aliquam minus dicta debitis, laboriosam totam perferendis illo saepe deleniti quo vitae perspiciatis porro veritatis nihil earum, aliquid nemo sunt? Nihil est nemo soluta voluptate.</p>
+
+<br>
+<img src="Images/index.jpg" alt="Collage image of all sporting events" style="width: 75%; height: auto; margin-left: 200px;">
+<button class="open-button" onclick="openForm()">Contact Us</button>
+
+<div class="form-popup" id="myForm">
+  <form action="Pages/thanks.html" class="form-container">
+    <h1>Contact Us</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="Text"><b>Massage</b></label>
+    <input type="text" placeholder="Your Massage" name="massage" required>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>

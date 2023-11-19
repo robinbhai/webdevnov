@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Kanit:wght@500&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="olympics">
+    <ul>
+        <li><a  href="../index.html">Home</a></li>
+        <li><a class="active" href="olympics.html">Olympics</a></li>
+        <li><a href="icc.html">Cricket World Cup</a></li>
+        <li><a href="fifa.html">FIFA World Cup</a></li>
+        <li><a href="rugby.html">Rugby World Cup</a></li>
+    </ul>
+<br>
+<h1 align="center">Olympics</h1>
+<hr>
+<br>
+<h2>Description of olympics</h2>
+<br>
+<p>The modern Olympic Games or Olympics (French: Jeux olympiques)[a][1] are the leading international sporting events featuring summer and winter sports competitions in which thousands of athletes from around the world participate in a variety of competitions. The Olympic Games are considered the world's foremost sports competition with more than 200 teams, representing sovereign states and territories participating; by default the Games generally substitute for any World Championships the year in which they take place (however, each class usually maintains their own records).[2] The Olympic Games are normally held every four years, and since 1994, have alternated between the Summer and Winter Olympics every two years during the four-year period.</p>
+<br>
+<h3 align="center">Swimming rankings by countries</h3>
+<br>
+<table>
+    <tr>
+      <th>Ranking</th>
+      <th>Country</th>
+      <th>point</th>
+    </tr>
+    <tr>
+      <td>1<sup>st</sup> </td>
+      <td>USA</td>
+      <td>11 Gold</td>
+    </tr>
+    <tr>
+      <td>2<sup>nd</sup></td>
+      <td>Australia</td>
+      <td>9 Gold</td>
+    </tr>
+    <tr>
+      <td>3<sup>rd</sup></td>
+      <td>UK</td>
+      <td>4 Gold</td>
+    </tr>
+    <tr>
+      <td>4<sup>th</sup></td>
+      <td>China</td>
+      <td>3 Gold</td>
+    </tr>
+    <tr>
+        <td>5<sup>th</sup></td>
+        <td>Russia</td>
+        <td>2 Gold</td>
+      </tr>
+  </table>
+<br>
+<br>
+<img src="../Images/olympics.jpg" alt="image of water handball" style="width: 75%; height: auto; margin-left: 200px;">
+
+<button class="open-button" onclick="openForm()">Contact Us</button>
+
+<div class="form-popup" id="myForm">
+  <form action="thanks.html" class="form-container">
+    <h1>Contact Us</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="Text"><b>Massage</b></label>
+    <input type="text" placeholder="Your Massage" name="massage" required>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+
+</body>
+</html>

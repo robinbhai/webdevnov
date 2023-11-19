@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Kanit:wght@500&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="rugby">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="olympics.html">Olympics</a></li>
+        <li><a href="icc.html">Cricket World Cup</a></li>
+        <li><a href="fifa.html">FIFA World Cup</a></li>
+        <li><a class="active" href="rugby.html">Rugby World Cup</a></li>
+    </ul>
+<br>
+<h1 align="center">Rugby World Cup</h1>
+<hr>
+<br>
+<h2>Description</h2>
+<br>
+<p>The Rugby World Cup is a men's rugby union tournament contested every four years between the top international teams, the winners of which are recognised as the World champions of the sport.
+
+    The tournament is administered by World Rugby, the sport's international governing body. The winners are awarded the Webb Ellis Cup, named after William Webb Ellis who, according to a popular legend, invented rugby by picking up the ball during a football game and running with it[1].
+    
+    The tournament was first held in 1987 and was co-hosted by New Zealand and Australia. Four countries have won the trophy; South Africa four times, New Zealand three times, Australia twice, and England once. South Africa is the current champion, having defeated New Zealand in the final of the 2023 tournament.
+    
+    Sixteen teams participated in the tournament from 1987 until 1995; in 1999, the tournament expanded to twenty teams. Japan hosted the 2019 Rugby World Cup and France hosted the 2023 Rugby World Cup. The tournament will expand again to twenty-four teams when it is held in Australia in 2027.
+    
+    Starting in 2021, the women's equivalent tournament was officially renamed the Rugby World Cup to promote equality with the men's tournament. However, the 2021 event was the only one to use this naming convention as at the end of the 2023 World Cup, World Rugby announced that all preceding tournaments would include the words "Men's" or "Women's" in their titles. The first event to use this convention will be the 2025 Women's Rugby World Cup, while the 2027 Men's Rugby World Cup will be the first ever to include "Men's" in its title.</p>
+<br><br>
+
+<table>
+    <tr>
+      <th>Ranking</th>
+      <th>Country</th>
+      <th>point</th>
+    </tr>
+    <tr>
+      <td>1<sup>st</sup> </td>
+      <td>South Africa</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>2<sup>nd</sup></td>
+      <td>Ireland</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>3<sup>rd</sup></td>
+      <td>Newzealand</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>4<sup>th</sup></td>
+      <td>France</td>
+      <td>87</td>
+    </tr>
+    <tr>
+        <td>5<sup>th</sup></td>
+        <td>England</td>
+        <td>85</td>
+    </tr>
+</table>
+<br><br>
+<img src="../Images/rugby.jpg" alt="rugby world cup image" style="width: 75%; height: auto; margin-left: 200px;">
+
+<button class="open-button" onclick="openForm()">Contact Us</button>
+
+<div class="form-popup" id="myForm">
+  <form action="thanks.html" class="form-container">
+    <h1>Contact Us</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="Text"><b>Massage</b></label>
+    <input type="text" placeholder="Your Massage" name="massage" required>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>

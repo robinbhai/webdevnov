@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Kanit:wght@500&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="fifa">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="olympics.html">Olympics</a></li>
+        <li><a href="icc.html">Cricket World Cup</a></li>
+        <li><a class="active" href="fifa.html">FIFA World Cup</a></li>
+        <li><a href="rugby.html">Rugby World Cup</a></li>
+    </ul>
+<br>
+<h1 align="center">Fifa World Cup</h1>
+<hr>
+<br>
+<h2>Description</h2>
+<br>
+<p>World Cup, in football (soccer), quadrennial tournament of men’s national teams that determines the sport’s world champion. It is likely the most popular sporting event in the world, drawing billions of television viewers every tournament. Countries worldwide compete vigorously, many years in advance, to host the lucrative event, and accusations of bribery connected to the awarding of hosting rights have long shadowed the tournament. In fact, the 2015 FIFA corruption scandal implicated more than two dozen FIFA officials and their associates in a 24-year self-enrichment scheme that reached the highest levels of FIFA management. The equivalent tournament for women’s national football teams is the Women’s World Cup.</p>
+<br>
+<table>
+        <tr>
+          <th>Ranking</th>
+          <th>Country</th>
+          <th>point</th>
+        </tr>
+        <tr>
+          <td>1<sup>st</sup> </td>
+          <td>Argentina</td>
+          <td>1861</td>
+        </tr>
+        <tr>
+          <td>2<sup>nd</sup></td>
+          <td>France</td>
+          <td>1853</td>
+        </tr>
+        <tr>
+          <td>3<sup>rd</sup></td>
+          <td>Brazil</td>
+          <td>1812</td>
+        </tr>
+        <tr>
+          <td>4<sup>th</sup></td>
+          <td>England</td>
+          <td>1807</td>
+        </tr>
+        <tr>
+            <td>5<sup>th</sup></td>
+            <td>Belgium</td>
+            <td>1793</td>
+        </tr>
+</table>
+<br><br>
+<img src="../Images/football.jpg" alt="football world cup" style="margin-left: 300px;">
+
+<button class="open-button" onclick="openForm()">Contact Us</button>
+
+<div class="form-popup" id="myForm">
+  <form action="thanks.html" class="form-container">
+    <h1>Contact Us</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="Text"><b>Massage</b></label>
+    <input type="text" placeholder="Your Massage" name="massage" required>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
